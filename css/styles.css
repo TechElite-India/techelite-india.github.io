@@ -5,3 +5,15 @@ body {
 .navbar {
     font-weight: 700;
 }
+
+.banner {
+    background-image: linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('../img/banner.jpg');
+    background-size: 100%;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.banner-img {
+    visibility: hidden;
+    width: 100%;
+}
