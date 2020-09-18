@@ -1,5 +1,15 @@
 body {
     font-family: 'Kumbh Sans', sans-serif;
+    background-color: rgb(82, 79, 79);
+    overflow-x: hidden;
+}
+
+footer {
+    background-color: #343a40;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    color: white;
 }
 
 .navbar {
@@ -10,6 +20,7 @@ body {
     background-image: linear-gradient(135deg, rgba(255, 84, 51, 0.8), rgba(86, 137, 255, 0.8)), url('../img/banner.jpg');
     background-size: 100%;
     margin-top: 100px;
+    margin-bottom: 50px;
     border-radius: 10px;
 }
 
@@ -44,4 +55,59 @@ body {
 .btn:hover {
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.5);
     transform: translate(0px, -3px);
+}
+
+.nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer-logo {
+    width: 40%;
+    margin-bottom: 50px;
+}
+
+.footer-title {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-item {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    transition: all 0.2s;
+}
+
+footer a:hover {
+    color: rgb(192, 189, 189);
+    text-decoration: none;
+}
+
+.footer-section {
+    margin-top: 50px;
+}
+
+.fab {
+    margin-right: 10px;
+    transition: all 0.2s;
+    /* margin-left: 10px; */
+}
+
+.fa-linkedin-in:hover {
+    color: #2867b2;
+}
+
+.fa-instagram:hover {
+    color: #e1306c;
+}
+
+.fa-twitter:hover {
+    color: #1da1f2;
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
 }
