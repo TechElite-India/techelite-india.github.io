@@ -1,6 +1,6 @@
 body {
     font-family: 'Kumbh Sans', sans-serif;
-    background-color: rgb(82, 79, 79);
+    /* background-color: rgb(82, 79, 79); */
     overflow-x: hidden;
 }
 
@@ -37,6 +37,12 @@ footer {
     left: 80px;
     transform: translate(0%, -50%);
     color: white;
+}
+
+.companies-crawler-img {
+    width: 150px;
+    margin: 10px;
+    vertical-align: middle;
 }
 
 .banner-desc {
