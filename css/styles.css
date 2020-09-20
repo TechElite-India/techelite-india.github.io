@@ -40,6 +40,12 @@ footer {
 }
 
 .companies-crawler-img {
+    width: 100px;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.companies-crawler-img-lg {
     width: 150px;
     margin: 10px;
     vertical-align: middle;
