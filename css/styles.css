@@ -6,9 +6,9 @@ body {
 
 footer {
     background-color: #343a40;
-    padding-top: 100px;
+    /* padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 100px;
+    padding-left: 100px; */
     color: white;
 }
 
@@ -87,13 +87,17 @@ footer {
 }
 
 .footer-logo {
-    width: 40%;
-    margin-bottom: 50px;
+    width: 30%;
+    padding-bottom: 50px;
 }
 
 .footer-title {
     font-weight: 700;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-block {
+    margin-bottom: 50px;
 }
 
 .footer-item {
@@ -111,7 +115,9 @@ footer a:hover {
 }
 
 .footer-section {
-    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
 }
 
 .fab {
