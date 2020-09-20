@@ -4,16 +4,35 @@ body {
     overflow-x: hidden;
 }
 
-.footer {
-    background-color: #343a40;
-    /* padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 100px; */
-    color: white;
+section {
+    margin-bottom: 100px;
+}
+
+.section-subheading {
+    text-align: center;
+    font-size: 250%;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 300%;
+    font-weight: 700;
+    margin-bottom: 60px;
 }
 
 .navbar {
     font-weight: 700;
+}
+
+.nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#navbarLogo {
+    transition: all 0.2s;
 }
 
 .banner {
@@ -41,6 +60,11 @@ body {
     color: white;
 }
 
+.banner-desc {
+    font-size: 30%;
+    font-weight: 400;
+}
+
 @media screen and (max-width: 767px) {
     .banner-text {
         left: 20px;
@@ -60,16 +84,14 @@ body {
     vertical-align: middle;
 }
 
-.banner-desc {
-    font-size: 30%;
-    font-weight: 400;
+.btn {
+    transition: all 0.2s;
 }
 
-.btn {
+.banner .btn {
     background-color: white;
     padding: 20px;
     margin-top: 50px;
-    transition: all 0.2s;
 }
 
 .btn:hover {
@@ -77,13 +99,9 @@ body {
     transform: translate(0px, -3px);
 }
 
-#navbarLogo {
-    transition: all 0.2s;
-}
-
-.nav-link {
-    margin-left: 10px;
-    margin-right: 10px;
+.footer {
+    background-color: #343a40;
+    color: white;
 }
 
 .footer-logo {
@@ -144,4 +162,43 @@ body {
 
 .fa-telegram-plane:hover {
     color: #0088cc;
+}
+
+.card-logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 200%;
+}
+
+.card {
+    border: none;
+    transition: all 0.2s;
+}
+
+.card:hover {
+    background-color: #e65c52;
+    color: white;
+}
+
+.card:hover .card-text {
+    color: white;
+}
+
+.card-text {
+    color: grey;
+}
+
+.card-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-btn .btn {
+    background-color: black;
+    color: white;
 }
