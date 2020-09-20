@@ -4,7 +4,7 @@ body {
     overflow-x: hidden;
 }
 
-footer {
+.footer {
     background-color: #343a40;
     /* padding-top: 100px;
     padding-bottom: 100px;
@@ -106,12 +106,12 @@ footer {
     margin-bottom: 10px;
 }
 
-footer a {
+.footer a {
     color: white;
     transition: all 0.2s;
 }
 
-footer a:hover {
+.footer a:hover {
     color: rgb(192, 189, 189);
     text-decoration: none;
 }
