@@ -218,3 +218,22 @@ section {
     background-color: black;
     color: white;
 }
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 150%;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+#demoModal {
+    overflow-y: visible;
+}

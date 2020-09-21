@@ -38,7 +38,7 @@
                         <a class="nav-link js-scroll-trigger" href="#courses">Courses</a>
                     </li>
                     <li>
-                        <a class="nav-link js-scroll-trigger" href="#">Products</a>
+                        <a class="nav-link js-scroll-trigger" href="#products">Products</a>
                     </li>
                     <li>
                         <a class="nav-link js-scroll-trigger" href="#">Testimonials</a>
@@ -50,6 +50,24 @@
             </div>
         </div>
     </nav>
+
+    <div id="demoModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        Demo 1
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <i class="fas fa-times-circle"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="player" width="100%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section id="header">
         <div class="container">
@@ -168,7 +186,7 @@
         <div class="container">
             <!-- <div class="row row-content"> -->
             <div class="section-heading">
-                Technical Courses
+                Courses
             </div>
             <!-- </div> -->
             <div class="row row-content">
@@ -233,6 +251,79 @@
                             <div class="card-btn">
                                 <button type="button" class="btn btn-md">Apply</button>
                                 <button type="button" class="btn btn-md">Description</button>
+                            </div>
+                            <!-- <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <div class="section-heading">
+                Products
+            </div>
+            <div class="row row-content">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="card-logo">
+                                <i class="far fa-clipboard fa-2x"></i>
+                            </div>
+                            <div class="card-title">
+                                Application
+                            </div>
+
+                            <!-- <hr> -->
+                            <div class="card-text">
+                                Lorem idivsum dolor sit amet, consectetur adidiviscing elit, sed do eiusmod temdivor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                            <div class="card-btn">
+                                <button id="demo1" data-toggle="modal" data-target="#demoModal" type="button" class="btn btn-md">Watch Demo</button>
+                            </div>
+                            <!-- <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="card-logo">
+                                <i class="far fa-clipboard fa-2x"></i>
+                            </div>
+                            <div class="card-title">
+                                Application
+                            </div>
+
+                            <!-- <hr> -->
+                            <div class="card-text">
+                                Lorem idivsum dolor sit amet, consectetur adidiviscing elit, sed do eiusmod temdivor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                            <div class="card-btn">
+                                <button id="demo2" data-toggle="modal" data-target="#demoModal" type="button" class="btn btn-md">Watch Demo</button>
+                            </div>
+                            <!-- <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="card-logo">
+                                <i class="far fa-clipboard fa-2x"></i>
+                            </div>
+                            <div class="card-title">
+                                Application
+                            </div>
+
+                            <!-- <hr> -->
+                            <div class="card-text">
+                                Lorem idivsum dolor sit amet, consectetur adidiviscing elit, sed do eiusmod temdivor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                            <div class="card-btn">
+                                <button id="demo3" data-toggle="modal" data-target="#demoModal" type="button" class="btn btn-md">Watch Demo</button>
                             </div>
                             <!-- <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a> -->
                         </div>
@@ -358,6 +449,9 @@
                 $("#navbarLogo").width("70");
             }
         });
+    </script>
+
+    <script src="js/player.js">
     </script>
 </body>
 
