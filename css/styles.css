@@ -13,6 +13,7 @@ section {
     font-size: 250%;
     font-weight: 400;
     margin-bottom: 60px;
+    margin-top: 60px;
 }
 
 .section-heading {
@@ -102,10 +103,12 @@ section {
 .footer {
     background-color: #343a40;
     color: white;
+    padding-top: 50px;
+    padding-left: 50px;
 }
 
 .footer-logo {
-    width: 30%;
+    width: 100%;
     padding-bottom: 50px;
 }
 
@@ -115,7 +118,7 @@ section {
 }
 
 .footer-block {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .footer-item {
@@ -133,9 +136,8 @@ section {
 }
 
 .footer-section {
-    padding-top: 50px;
+    padding-right: 50px;
     padding-bottom: 50px;
-    padding-left: 50px;
 }
 
 .fab {
@@ -162,6 +164,14 @@ section {
 
 .fa-telegram-plane:hover {
     color: #0088cc;
+}
+
+.fa-github:hover {
+    color: #24292e;
+}
+
+.fa-youtube:hover {
+    color: #FF0000;
 }
 
 .card-logo {
