@@ -112,6 +112,12 @@ section {
     padding-bottom: 50px;
 }
 
+@media screen and (max-width: 767px) {
+    .footer-logo {
+        width: 80%;
+    }
+}
+
 .footer-title {
     font-weight: 700;
     padding-bottom: 20px;
