@@ -237,3 +237,12 @@ section {
 #demoModal {
     overflow-y: visible;
 }
+
+.course-desc-text a {
+    color: black;
+    text-decoration: underline;
+}
+
+.course-desc-text {
+    padding: 10px;
+}
