@@ -45,3 +45,10 @@ $(window).on('orientationchange', function() {
     $('.dropdown-content').css('display', 'none');
     $('.dropdown-content').css('margin-left', 0);
 });
+
+$(document).on('click', function(event) {
+    if (event.target !== $('.dropbtn')[0]) {
+        $('.dropdown-content').css('display', 'none');
+        $('.dropdown-content').css('margin-left', 0);
+    }
+});
