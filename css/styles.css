@@ -25,6 +25,7 @@ section {
 
 .navbar {
     font-weight: 700;
+    background-color: rgb(3, 97, 97);
 }
 
 .nav-link {
@@ -101,8 +102,8 @@ section {
 }
 
 .footer {
-    background-color: #343a40;
-    color: white;
+    background-color: teal;
+    color: black;
     padding-top: 50px;
     padding-left: 50px;
 }
@@ -132,12 +133,12 @@ section {
 }
 
 .footer a {
-    color: white;
+    color: black;
     transition: all 0.2s;
 }
 
 .footer a:hover {
-    color: rgb(192, 189, 189);
+    color: rgb(71, 66, 66);
     text-decoration: none;
 }
 
@@ -149,6 +150,7 @@ section {
 .fab {
     margin-right: 10px;
     transition: all 0.2s;
+    color: black;
     /* margin-left: 10px; */
 }
 
@@ -197,7 +199,7 @@ section {
 }
 
 .card:hover {
-    background-color: #e65c52;
+    background-color: teal;
     color: white;
 }
 
@@ -239,7 +241,7 @@ section {
 }
 
 .course-desc-text a {
-    color: black;
+    color: inherit;
     text-decoration: underline;
 }
 
@@ -318,3 +320,39 @@ cite {
 .carousel-item {
     overflow-y: visible;
 }
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    text-align: left;
+    background-color: inherit;
+    color: inherit;
+    outline: none;
+    border: none;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(3, 97, 97);
+    margin-left: 0px;
+}
+
+.dropdown-content a {
+    font-weight: 400;
+    float: none;
+    color: white;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    padding: 12px 16px;
+    font-size: 100%;
+}
+
+
+/* .dropdown:hover .dropdown-content {
+    display: block;
+} */

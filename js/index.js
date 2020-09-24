@@ -1,7 +1,6 @@
 (function($) {
-    "use strict"; // Start of use strict
+    "use strict";
 
-    // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -15,9 +14,34 @@
         }
     });
 
-    // Closes responsive menu when a scroll trigger link is clicked
     $('.js-scroll-trigger').click(function() {
         $('.navbar-collapse').collapse('hide');
     });
 
-})(jQuery); // End of use strict
+})(jQuery);
+
+function toggleDropdown() {
+    if ($('.dropdown-content').css('display') == 'none') {
+        $('.dropdown-content').css('display', 'block');
+        if ($('.navbar-toggler').is(':visible')) {
+            console.log($(window).width());
+            var marginLeft = ($(window).width() - $('.dropdown-content').width()) - 40;
+            console.log(marginLeft);
+            $('.dropdown-content').css('margin-left', marginLeft);
+        } else {
+            var currleft = $('.dropdown-content').offset().left;
+            var reqLeft = ($(window).width() - $('.dropdown-content').width()) - 20;
+            console.log(reqLeft - currleft);
+            var marginLeft = reqLeft - currleft;
+            $('.dropdown-content').css('margin-left', marginLeft);
+        }
+    } else {
+        $('.dropdown-content').css('display', 'none');
+        $('.dropdown-content').css('margin-left', 0);
+    }
+}
+
+$(window).on('orientationchange', function() {
+    $('.dropdown-content').css('display', 'none');
+    $('.dropdown-content').css('margin-left', 0);
+});
