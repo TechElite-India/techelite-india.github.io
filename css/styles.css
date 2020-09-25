@@ -52,12 +52,12 @@ section {
     width: 100%;
 }
 
-.banner-text {
+.banner-content {
     font-size: 400%;
     font-weight: 700;
     position: absolute;
     top: 50%;
-    left: 80px;
+    left: 100px;
     transform: translate(0%, -50%);
     color: white;
 }
@@ -68,7 +68,7 @@ section {
 }
 
 @media screen and (max-width: 767px) {
-    .banner-text {
+    .banner-content {
         left: 20px;
         font-size: 300%;
     }
@@ -389,4 +389,16 @@ cite {
 .dropdown-item:hover {
     background-color: rgb(4, 80, 80);
     color: white;
+}
+
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: white;
+    /* margin: 5px; */
+}
+
+.carousel-indicators {
+    bottom: 50px;
 }
