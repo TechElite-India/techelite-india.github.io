@@ -20,11 +20,25 @@
 
 })(jQuery);
 
-jQuery(function() {
-    if ($('.navbar-toggler').is(':visible')) {
-        $('.dropdown-toggle').css('float', 'right');
-    }
-})
+function xor(a, b) {
+    return ((a && !b) || (!a && b));
+}
+
+// function applyFloatProperty(flip) {
+//     if (xor(flip, $('.navbar-toggler').is(':visible'))) {
+//         $('.dropdown-toggle').css('float', 'right');
+//     } else {
+//         $('.dropdown-toggle').css('float', 'none');
+//     }
+// }
+
+// jQuery(function() {
+//     applyFloatProperty(false);
+// });
+
+// $(window).on('orientationchange', function() {
+//     applyFloatProperty(true);
+// });
 
 // function toggleDropdown() {
 //     $('.fa-caret-down').toggleClass('fa-flip-vertical')
@@ -65,3 +79,12 @@ jQuery(function() {
 //         }
 //     }
 // });
+
+$('.dropdown').on('show.bs.dropdown', function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+});
+
+// Add slideUp animation to Bootstrap dropdown when collapsing.
+$('.dropdown').on('hide.bs.dropdown', function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+});

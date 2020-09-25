@@ -382,11 +382,11 @@ cite {
     font-size: inherit;
     font-weight: inherit;
     float: right !important;
-    max-width: fit-content;
 }
 
 .dropdown-item {
     color: white;
+    background-color: inherit;
     transition: all 0.2s;
 }
 
