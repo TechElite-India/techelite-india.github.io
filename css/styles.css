@@ -369,10 +369,6 @@ cite {
     font-weight: inherit;
 }
 
-.dropdown-toggle {
-    /* float: right; */
-}
-
 .dropdown-menu {
     cursor: pointer;
     text-align: left;
