@@ -2,6 +2,7 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
     /* background-color: rgb(82, 79, 79); */
     overflow-x: hidden;
+    background-color: skyblue;
 }
 
 section {
@@ -25,7 +26,7 @@ section {
 
 .navbar {
     font-weight: 700;
-    background-color: rgb(3, 97, 97);
+    background-color: rgb(5, 85, 117);
 }
 
 .nav-link {
@@ -44,7 +45,7 @@ section {
     height: 720px;
     margin-top: 100px;
     margin-bottom: 50px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .banner-img {
@@ -102,8 +103,8 @@ section {
 }
 
 .footer {
-    background-color: teal;
-    color: black;
+    background-color: rgb(13, 110, 148);
+    color: white;
     padding-top: 50px;
     padding-left: 50px;
 }
@@ -133,7 +134,7 @@ section {
 }
 
 .footer a {
-    color: black;
+    color: white;
     transition: all 0.2s;
 }
 
@@ -150,7 +151,7 @@ section {
 .fab {
     margin-right: 10px;
     transition: all 0.2s;
-    color: black;
+    color: white;
     /* margin-left: 10px; */
 }
 
@@ -194,12 +195,13 @@ section {
 }
 
 .card {
+    background-color: inherit;
     border: none;
     transition: all 0.2s;
 }
 
 .card:hover {
-    background-color: teal;
+    background-color: rgb(13, 110, 148);
     color: white;
 }
 
@@ -208,7 +210,7 @@ section {
 }
 
 .card-text {
-    color: grey;
+    color: rgb(85, 84, 84);
 }
 
 .card-btn {
@@ -274,7 +276,7 @@ blockquote {
     font-size: 120%;
     width: 100%;
     /* margin: 50px auto; */
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     /* font-style: italic; */
     /* color: #555555; */
     padding: 1.2em 30px 1.2em 75px;
@@ -285,8 +287,7 @@ blockquote {
 }
 
 blockquote::before {
-    font-family: Arial;
-    /* font-size: 200%; */
+    font-family: 'Nunito', sans-serif;
     content: "\201C";
     color: gray;
     font-size: 6em;
@@ -372,7 +373,8 @@ cite {
 .dropdown-menu {
     cursor: pointer;
     text-align: left;
-    background-color: rgb(3, 97, 97);
+    background-color: rgb(5, 85, 117);
+    /* background-color: rgb(3, 97, 97); */
     outline: none;
     border: none;
     font-size: inherit;
@@ -387,7 +389,7 @@ cite {
 }
 
 .dropdown-item:hover {
-    background-color: rgb(4, 80, 80);
+    background-color: rgb(7, 68, 92);
     color: white;
 }
 
@@ -401,4 +403,21 @@ cite {
 
 .carousel-indicators {
     bottom: 50px;
+}
+
+.quote-box {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 170%;
+    text-align: center;
+}
+
+.quote {
+    text-align: left;
+}
+
+.cite {
+    font-weight: 600;
+    text-align: right;
 }
