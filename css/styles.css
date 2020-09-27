@@ -196,7 +196,7 @@ section {
 
 .card {
     background-color: inherit;
-    /* border: none; */
+    opacity: 0;
     transition: all 0.2s;
 }
 

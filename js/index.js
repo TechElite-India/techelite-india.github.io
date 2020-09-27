@@ -27,3 +27,27 @@ $('.dropdown').on('show.bs.dropdown', function() {
 $('.dropdown').on('hide.bs.dropdown', function() {
     $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
 });
+
+function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    elemTop -= 50;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+jQuery(function() {
+    $(window).on('scroll', function() {
+        var elems = [$('#stepsForJob .card'), $('#courses .card'), $('#products .card')];
+        elems.forEach(elem => {
+            if (isScrolledIntoView(elem.parent())) {
+                elem.animate({
+                    'opacity': 1
+                }, 'slow');
+            }
+        });
+    });
+});
