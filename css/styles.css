@@ -415,9 +415,11 @@ cite {
 
 .quote {
     text-align: left;
+    color: rgb(75, 75, 75);
 }
 
 .cite {
     font-weight: 600;
     text-align: right;
+    color: rgb(46, 40, 40);
 }
