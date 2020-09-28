@@ -5,11 +5,6 @@ body {
     background-color: skyblue;
 }
 
-
-/* section {
-    margin-bottom: 100px;
-} */
-
 .section-subheading {
     text-align: center;
     font-size: 250%;
@@ -22,12 +17,13 @@ body {
     text-align: center;
     font-size: 300%;
     font-weight: 700;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 .navbar {
     font-weight: 700;
-    background-color: rgb(5, 85, 117);
+    background-color: navy;
 }
 
 .nav-link {
@@ -104,10 +100,11 @@ body {
 }
 
 .footer {
-    background-color: rgb(13, 110, 148);
+    background-color: rgb(24, 24, 182);
     color: white;
     padding-top: 50px;
     padding-left: 50px;
+    margin-top: 50px;
 }
 
 .footer-logo {
@@ -423,4 +420,14 @@ cite {
     font-weight: 600;
     text-align: right;
     color: rgb(46, 40, 40);
+}
+
+#founder img {
+    width: 100%;
+}
+
+.founder-content {
+    font-size: 120%;
+    padding-left: 50px;
+    padding-right: 50px;
 }
