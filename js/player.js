@@ -9,12 +9,7 @@ jQuery(function() {
     });
 
     $('#demo2').on('click', function() {
-        $('#player').attr('src', "https://www.youtube.com/embed/EzJhTb564iA");
-        $('#player').attr('height', $(window).height() * 0.6);
-    });
-
-    $('#demo3').on('click', function() {
-        $('#player').attr('src', "https://www.youtube.com/embed/EzJhTb564iA");
+        $('#player').attr('src', "https://www.youtube.com/embed/cShJfwk8sfE");
         $('#player').attr('height', $(window).height() * 0.6);
     });
 });
