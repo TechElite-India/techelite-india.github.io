@@ -332,43 +332,6 @@ cite {
     overflow-y: visible;
 }
 
-
-/* .dropdown .dropbtn {
-    cursor: pointer;
-    text-align: left;
-    background-color: inherit;
-    color: inherit;
-    outline: none;
-    border: none;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    padding: 0;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgb(3, 97, 97);
-    margin-left: 0px;
-}
-
-.dropdown-content a {
-    font-weight: 400;
-    float: none;
-    color: white;
-    display: block;
-    text-align: left;
-    text-decoration: none;
-    padding: 12px 16px;
-    font-size: 100%;
-    transition: all 0.2s;
-}
-
-.dropdown-content a:hover {
-    background-color: rgb(4, 80, 80);
-} */
-
 .dropdown-toggle {
     cursor: pointer;
     text-align: left;
@@ -383,8 +346,7 @@ cite {
 .dropdown-menu {
     cursor: pointer;
     text-align: left;
-    background-color: rgb(5, 85, 117);
-    /* background-color: rgb(3, 97, 97); */
+    background-color: navy;
     outline: none;
     border: none;
     font-size: inherit;
@@ -399,7 +361,7 @@ cite {
 }
 
 .dropdown-item:hover {
-    background-color: rgb(7, 68, 92);
+    background-color: rgb(5, 5, 92);
     color: white;
 }
 

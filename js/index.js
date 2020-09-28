@@ -33,7 +33,7 @@ function isScrolledIntoView(elem) {
     var docViewBottom = docViewTop + $(window).height();
 
     var elemTop = $(elem).offset().top;
-    elemTop -= 50;
+    elemTop -= 100;
     var elemBottom = elemTop + $(elem).height();
 
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
@@ -41,10 +41,11 @@ function isScrolledIntoView(elem) {
 
 jQuery(function() {
     $(window).on('scroll', function() {
-        var elems = [$('#stepsForJob .card'), $('#courses .card'), $('#products .card')];
-        elems.forEach(elem => {
-            if (isScrolledIntoView(elem.parent())) {
-                elem.animate({
+        console.log('f');
+        var sections = ['#stepsForJob', '#courses', '#products'];
+        sections.forEach(section => {
+            if (isScrolledIntoView($(section))) {
+                $(section + ' .card').animate({
                     'opacity': 1
                 }, 'slow');
             }
