@@ -30,6 +30,12 @@ body {
 .nav-link {
     margin-left: 10px;
     margin-right: 10px;
+    transition: all 0.2s;
+}
+
+.nav-link.active {
+    background-color: skyblue;
+    border-radius: 10px;
 }
 
 #navbarLogo {
@@ -342,7 +348,7 @@ cite {
 .dropdown-menu {
     cursor: pointer;
     text-align: left;
-    background-color: darkgray;
+    background-color: rgb(236, 231, 231);
     outline: none;
     border: none;
     font-size: inherit;

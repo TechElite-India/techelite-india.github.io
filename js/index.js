@@ -41,7 +41,6 @@ function isScrolledIntoView(elem) {
 
 jQuery(function() {
     $(window).on('scroll', function() {
-        console.log('f');
         var sections = ['#stepsForJob', '#courses', '#products'];
         sections.forEach(section => {
             if (isScrolledIntoView($(section))) {
@@ -52,3 +51,21 @@ jQuery(function() {
         });
     });
 });
+
+$('.nav-link').on('click', function() {
+    var navbarElems = $('.nav-link');
+    jQuery.each(navbarElems, function(index, value) {
+        // console.log(value);
+        $(value).removeClass('active');
+    });
+
+    $(this).addClass('active');
+})
+
+$('.navbar-brand').on('click', function() {
+    var navbarElems = $('.nav-link');
+    jQuery.each(navbarElems, function(index, value) {
+        // console.log(value);
+        $(value).removeClass('active');
+    });
+})
