@@ -209,6 +209,11 @@ body {
 
 .card-text {
     color: rgb(85, 84, 84);
+    text-align: center;
+}
+
+.card-price {
+    font-size: 200%;
 }
 
 .card-btn {
@@ -220,6 +225,13 @@ body {
     background-color: black;
     color: white;
 }
+
+
+/* h5>.badge {
+    vertical-align: middle;
+    top: 50%;
+    position: relative;
+} */
 
 .modal-body {
     text-align: center;
