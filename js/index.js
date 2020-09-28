@@ -36,7 +36,7 @@ function isScrolledIntoView(elem) {
     elemTop -= 100;
     var elemBottom = elemTop + $(elem).height();
 
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    return (elemTop >= docViewTop);
 }
 
 jQuery(function() {
@@ -52,20 +52,20 @@ jQuery(function() {
     });
 });
 
-$('.nav-link').on('click', function() {
-    var navbarElems = $('.nav-link');
-    jQuery.each(navbarElems, function(index, value) {
-        // console.log(value);
-        $(value).removeClass('active');
+if ($('#navbar').is(':visible')) {
+    $('.nav-link').on('click', function() {
+        var navbarElems = $('.nav-link');
+        jQuery.each(navbarElems, function(index, value) {
+            $(value).removeClass('active');
+        });
+
+        $(this).addClass('active');
     });
 
-    $(this).addClass('active');
-})
-
-$('.navbar-brand').on('click', function() {
-    var navbarElems = $('.nav-link');
-    jQuery.each(navbarElems, function(index, value) {
-        // console.log(value);
-        $(value).removeClass('active');
+    $('.navbar-brand').on('click', function() {
+        var navbarElems = $('.nav-link');
+        jQuery.each(navbarElems, function(index, value) {
+            $(value).removeClass('active');
+        });
     });
-})
+}

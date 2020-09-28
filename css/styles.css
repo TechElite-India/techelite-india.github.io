@@ -205,10 +205,6 @@ body {
     /* color: white; */
 }
 
-.card:hover .card-text {
-    /* color: white; */
-}
-
 .card-text {
     color: rgb(85, 84, 84);
     text-align: center;
