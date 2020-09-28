@@ -142,7 +142,7 @@ body {
     padding-bottom: 50px;
 }
 
-.fab {
+.footer .fab {
     margin-right: 10px;
     transition: all 0.2s;
     color: white;
