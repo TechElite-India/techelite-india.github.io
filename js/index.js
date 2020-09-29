@@ -33,10 +33,10 @@ function isScrolledIntoView(elem) {
     var docViewBottom = docViewTop + $(window).height();
 
     var elemTop = $(elem).offset().top;
-    elemTop -= 100;
-    var elemBottom = elemTop + $(elem).height();
+    // elemTop -= 100;
+    // var elemBottom = elemTop + $(elem).height();
 
-    return (elemTop >= docViewTop);
+    return (elemTop <= docViewBottom - 500);
 }
 
 jQuery(function() {
@@ -44,6 +44,7 @@ jQuery(function() {
         var sections = ['#stepsForJob', '#courses', '#products'];
         sections.forEach(section => {
             if (isScrolledIntoView($(section))) {
+                console.log(section);
                 $(section + ' .card').animate({
                     'opacity': 1
                 }, 'slow');
