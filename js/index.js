@@ -44,7 +44,6 @@ jQuery(function() {
         var sections = ['#stepsForJob', '#courses', '#products'];
         sections.forEach(section => {
             if (isScrolledIntoView($(section))) {
-                console.log(section);
                 $(section + ' .card').animate({
                     'opacity': 1
                 }, 'slow');
@@ -70,3 +69,14 @@ if ($('#navbar').is(':visible')) {
         });
     });
 }
+
+jQuery(function() {
+    var carouselItems = $('#testimonialsCarousel .carousel-item');
+    var maxHeight = 0;
+    carouselItems.each(function() {
+        maxHeight = Math.max(maxHeight, $(this).height());
+        console.log(maxHeight);
+    });
+
+    $('#testimonialsCarousel .carousel-inner').height(maxHeight + 200);
+})

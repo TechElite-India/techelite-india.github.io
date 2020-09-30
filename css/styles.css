@@ -375,6 +375,12 @@ cite {
     bottom: 50px;
 }
 
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    /* height: 500px; */
+}
+
 .quote-box {
     margin-top: 100px;
     margin-bottom: 100px;
