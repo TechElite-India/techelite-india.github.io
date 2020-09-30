@@ -43,7 +43,7 @@ body {
 }
 
 .banner {
-    background-image: linear-gradient(135deg, rgba(255, 84, 51, 0.8), rgba(86, 137, 255, 0.8)), url('../img/banner.jpg');
+    background-image: linear-gradient(135deg, rgba(255, 84, 51, 0.8), rgba(86, 137, 255, 0.8)), url('../img/banner_1.png');
     background-position: center;
     overflow-x: hidden;
     height: 720px;
@@ -102,7 +102,7 @@ body {
 }
 
 .footer {
-    background-color: skyblue;
+    background-image: linear-gradient();
     /* color: white; */
     padding-top: 50px;
     padding-left: 50px;
@@ -111,7 +111,7 @@ body {
 
 .footer-logo {
     width: 100%;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 @media screen and (max-width: 767px) {
@@ -405,9 +405,17 @@ cite {
 }
 
 .founder-content {
-    font-size: 120%;
+    font-size: 100%;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.founder {
+    text-align: center;
+}
+
+.founder-name {
+    margin-top: 10px;
 }
 
 .course-banner {
@@ -457,7 +465,7 @@ cite {
 }
 
 .course-content-cell.shade {
-    background-color: rgb(87, 174, 209);
+    background-color: darkgray;
 }
 
 .course-content-cell-content {
@@ -475,8 +483,7 @@ cite {
 }
 
 #pricing .card:hover {
-    background-color: rgb(13, 110, 148);
-    color: white;
+    background-color: skyblue;
 }
 
 .card-text-lg {
