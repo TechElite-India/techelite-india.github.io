@@ -410,7 +410,7 @@ cite {
     padding-right: 40px;
 }
 
-#founder img {
+.founder-profile {
     width: 100%;
 }
 
@@ -490,6 +490,11 @@ cite {
 
 #pricing {
     padding-bottom: 50px;
+}
+
+.founder-company {
+    width: 30%;
+    padding: 10px;
 }
 
 #pricing .card:hover {
