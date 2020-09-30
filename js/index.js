@@ -33,8 +33,6 @@ function isScrolledIntoView(elem) {
     var docViewBottom = docViewTop + $(window).height();
 
     var elemTop = $(elem).offset().top;
-    // elemTop -= 100;
-    // var elemBottom = elemTop + $(elem).height();
 
     return (elemTop <= docViewBottom - 500);
 }
@@ -79,4 +77,10 @@ jQuery(function() {
     });
 
     $('#testimonialsCarousel .carousel-inner').height(maxHeight + 200);
+});
+
+$('.nav-link').on('click', function() {
+    if (!$(this).hasClass('dropdown-toggle') && $('.dropdown-menu').hasClass('show')) {
+        $('.dropdown-toggle').dropdown('toggle');
+    }
 });

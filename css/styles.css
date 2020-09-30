@@ -34,7 +34,7 @@ body {
 }
 
 .nav-link.active {
-    background-color: skyblue;
+    background-color: rgb(1, 126, 254);
     border-radius: 10px;
 }
 
