@@ -79,4 +79,4 @@ jQuery(function() {
     });
 
     $('#testimonialsCarousel .carousel-inner').height(maxHeight + 200);
-})
+});
