@@ -133,7 +133,8 @@ body {
     margin-bottom: 10px;
 }
 
-.footer a {
+
+/* .footer a {
     color: black;
     transition: all 0.2s;
 }
@@ -141,7 +142,7 @@ body {
 .footer a:hover {
     color: rgb(71, 66, 66);
     text-decoration: none;
-}
+} */
 
 .footer-section {
     padding-right: 50px;
