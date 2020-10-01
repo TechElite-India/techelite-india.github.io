@@ -79,8 +79,11 @@ jQuery(function() {
     $('#testimonialsCarousel .carousel-inner').height(maxHeight + 200);
 });
 
-$('.nav-link').on('click', function() {
+function toggleDropdownOnNavClick() {
     if (!$(this).hasClass('dropdown-toggle') && $('.dropdown-menu').hasClass('show')) {
         $('.dropdown-toggle').dropdown('toggle');
     }
-});
+}
+
+$('.nav-link').on('click', toggleDropdownOnNavClick);
+$('.navbar-brand').on('click', toggleDropdownOnNavClick);
