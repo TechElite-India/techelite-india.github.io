@@ -430,11 +430,15 @@ cite {
 }
 
 .founder {
+    padding-top: 30px;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .founder-name {
     margin-top: 10px;
+    font-size: 150%;
 }
 
 .course-banner {
@@ -498,7 +502,7 @@ cite {
 }
 
 .founder-company {
-    width: 30%;
+    width: 15%;
     padding: 10px;
 }
 
