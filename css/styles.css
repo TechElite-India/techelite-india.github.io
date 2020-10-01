@@ -184,8 +184,8 @@ body {
     color: #FF0000;
 }
 
-.iconify {
-    font-size: 2em;
+.card-logo img {
+    width: 30%;
 }
 
 .card-logo {
@@ -504,4 +504,8 @@ cite {
 
 .card-text-lg {
     font-size: 120%;
+}
+
+#testimonialsCarousel {
+    background-color: teal;
 }
