@@ -58,7 +58,7 @@ body {
     top: 50%;
     left: 100px;
     transform: translate(0%, -50%);
-    color: white;
+    /* color: white; */
 }
 
 .banner-desc {
