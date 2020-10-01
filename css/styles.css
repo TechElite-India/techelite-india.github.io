@@ -184,6 +184,10 @@ body {
     color: #FF0000;
 }
 
+.iconify {
+    font-size: 2em;
+}
+
 .card-logo {
     text-align: center;
     margin-bottom: 10px;
