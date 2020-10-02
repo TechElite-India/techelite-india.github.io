@@ -54,16 +54,16 @@ if ($('#navbar').is(':visible')) {
     $('.nav-link').on('click', function() {
         var navbarElems = $('.nav-link');
         jQuery.each(navbarElems, function(index, value) {
-            $(value).removeClass('active');
+            $(value).removeClass('selected');
         });
 
-        $(this).addClass('active');
+        $(this).addClass('selected');
     });
 
     $('.navbar-brand').on('click', function() {
         var navbarElems = $('.nav-link');
         jQuery.each(navbarElems, function(index, value) {
-            $(value).removeClass('active');
+            $(value).removeClass('selected');
         });
     });
 }
@@ -73,7 +73,6 @@ jQuery(function() {
     var maxHeight = 0;
     carouselItems.each(function() {
         maxHeight = Math.max(maxHeight, $(this).height());
-        console.log(maxHeight);
     });
 
     $('#testimonialsCarousel .carousel-inner').height(maxHeight + 200);
