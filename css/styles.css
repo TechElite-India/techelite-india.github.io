@@ -565,5 +565,5 @@ cite {
 }
 
 #testimonialsCarousel {
-    background-color: rgb(240, 240, 16);
+    background-image: linear-gradient(yellow, lightyellow);
 }
