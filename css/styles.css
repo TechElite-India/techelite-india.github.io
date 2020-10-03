@@ -154,17 +154,17 @@ body {
     text-decoration: none;
 }
 
-.founder-social {
+.profile-social {
     text-align: center;
     margin-top: 10px;
 }
 
-.founder-social a {
+.profile-social a {
     color: black;
     transition: all 0.2s;
 }
 
-.founder-social a:hover {
+.profile-social a:hover {
     color: rgb(71, 66, 66);
     text-decoration: none;
 }
