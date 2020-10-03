@@ -568,6 +568,14 @@ cite {
     background-image: linear-gradient(yellow, lightyellow);
 }
 
+#testimonialsCarousel .carousel-inner {
+    opacity: 0;
+}
+
+#founderInnerContent {
+    opacity: 0;
+}
+
 .nav-link {
     font-size: 120%;
 }

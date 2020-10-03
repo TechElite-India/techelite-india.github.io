@@ -47,6 +47,18 @@ jQuery(function() {
                 }, 'slow');
             }
         });
+
+        if (isScrolledIntoView($('#testimonialsCarousel'))) {
+            $('#testimonialsCarousel .carousel-inner').animate({
+                'opacity': 1
+            }, 'slow');
+        }
+
+        if (isScrolledIntoView($('#founder'))) {
+            $('#founderInnerContent').animate({
+                'opacity': 1
+            }, 'slow');
+        }
     });
 });
 
