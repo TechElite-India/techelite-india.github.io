@@ -565,9 +565,11 @@ cite {
 }
 
 #testimonialsCarousel .carousel-inner {
-    background-image: linear-gradient(yellow, lightyellow);
+    background-image: linear-gradient(yellow, white);
     opacity: 0;
 }
+
+.carousel-item:hover {}
 
 #founderInnerContent {
     opacity: 0;
