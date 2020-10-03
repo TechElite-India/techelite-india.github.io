@@ -564,11 +564,8 @@ cite {
     font-size: 120%;
 }
 
-#testimonialsCarousel {
-    background-image: linear-gradient(yellow, lightyellow);
-}
-
 #testimonialsCarousel .carousel-inner {
+    background-image: linear-gradient(yellow, lightyellow);
     opacity: 0;
 }
 
