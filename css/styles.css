@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Nunito:ital,wght@1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Nunito:ital,wght@1,400;1,700&display=swap');
 body {
     font-family: 'Kumbh Sans', sans-serif;
     /* background-color: rgb(82, 79, 79); */
@@ -378,9 +378,7 @@ cite {
 .carousel.carousel-fade .carousel-item {
     display: block;
     opacity: 0;
-    transition: opacity ease-in 1s;
     overflow-y: visible;
-    transition: all 0.2s;
 }
 
 .carousel.carousel-fade .carousel-item.active {
@@ -389,6 +387,12 @@ cite {
 
 .carousel.carousel-fade .carousel-item:hover {
     transform: scale(1.2);
+    transition: transform 0.2s;
+}
+
+.carousel.carousel-fade .carousel-item:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.2s, opacity ease-in 1s;
 }
 
 #founderInnerContent {
@@ -484,7 +488,11 @@ cite {
 }
 
 .testimonials-phrase {
-    font-size: 120%;
+    font-size: 140%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .founder-content {
