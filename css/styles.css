@@ -391,6 +391,14 @@ cite {
     transform: scale(1.2);
 }
 
+#founderInnerContent {
+    transition: all 0.2s;
+}
+
+#founderInnerContent:hover {
+    transform: scale(1.2);
+}
+
 .dropdown-toggle {
     cursor: pointer;
     text-align: left;
