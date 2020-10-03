@@ -567,3 +567,7 @@ cite {
 #testimonialsCarousel {
     background-image: linear-gradient(yellow, lightyellow);
 }
+
+.nav-link {
+    font-size: 120%;
+}
