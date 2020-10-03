@@ -379,14 +379,16 @@ cite {
     display: block;
     opacity: 0;
     transition: opacity ease-in 1s;
+    overflow-y: visible;
+    transition: all 0.2s;
 }
 
 .carousel.carousel-fade .carousel-item.active {
     opacity: 1 !important;
 }
 
-.carousel-item {
-    overflow-y: visible;
+.carousel.carousel-fade .carousel-item:hover {
+    transform: scale(1.2);
 }
 
 .dropdown-toggle {
@@ -568,8 +570,6 @@ cite {
     background-image: linear-gradient(yellow, white);
     opacity: 0;
 }
-
-.carousel-item:hover {}
 
 #founderInnerContent {
     opacity: 0;
