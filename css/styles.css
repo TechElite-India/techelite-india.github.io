@@ -475,6 +475,10 @@ cite {
     width: 100%;
 }
 
+.testimonials-phrase {
+    font-size: 120%;
+}
+
 .founder-content {
     font-size: 100%;
     padding-left: 50px;
