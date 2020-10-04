@@ -448,6 +448,12 @@ cite {
     /* margin: 5px; */
 }
 
+.profile-quote {
+    font-weight: 700;
+    font-size: 120%;
+    margin: 10px;
+}
+
 .carousel-indicators {
     bottom: 50px;
 }
