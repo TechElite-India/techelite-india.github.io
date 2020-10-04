@@ -381,6 +381,10 @@ cite {
     overflow-y: visible;
 }
 
+.fa-star {
+    color: blue;
+}
+
 .carousel.carousel-fade .carousel-item.active {
     opacity: 1 !important;
 }
