@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Nunito:ital,wght@1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Nunito:ital,wght@1,400;1,700&display=swap');
 body {
     font-family: 'Kumbh Sans', sans-serif;
     /* background-color: rgb(82, 79, 79); */
@@ -33,7 +33,7 @@ body {
     transition: all 0.2s;
 }
 
-.nav-link.active {
+.nav-link.selected {
     background-color: rgb(1, 126, 254);
     border-radius: 10px;
 }
@@ -43,11 +43,10 @@ body {
 }
 
 .banner {
-    background-image: linear-gradient(135deg, rgba(255, 84, 51, 0.8), rgba(86, 137, 255, 0.8)), url('../img/banner.png');
     background-position: center;
     overflow-x: hidden;
     height: 720px;
-    margin-top: 100px;
+    margin-top: 120px;
     margin-bottom: 50px;
     border-radius: 5px;
 }
@@ -59,7 +58,7 @@ body {
     top: 50%;
     left: 100px;
     transform: translate(0%, -50%);
-    color: white;
+    /* color: white; */
 }
 
 .banner-desc {
@@ -120,9 +119,21 @@ body {
     }
 }
 
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(73, 72, 72);
+    color: white;
+    text-align: center;
+    height: 50px;
+}
+
 .footer-title {
     font-weight: 700;
+    font-size: 120%;
     padding-bottom: 20px;
+    text-decoration: underline;
 }
 
 .footer-block {
@@ -143,16 +154,56 @@ body {
     text-decoration: none;
 }
 
+.profile-social {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.profile-social a {
+    color: black;
+    transition: all 0.2s;
+}
+
+.profile-social a:hover {
+    color: rgb(71, 66, 66);
+    text-decoration: none;
+}
+
 .footer-section {
     padding-right: 50px;
     padding-bottom: 50px;
 }
 
 .footer .fab {
-    margin-right: 10px;
+    /* margin-right: 10px; */
     transition: all 0.2s;
-    color: black;
+    /* color: white; */
     /* margin-left: 10px; */
+}
+
+.fa-stack {
+    width: 2em !important;
+}
+
+.circle-icon {
+    background: #ffc0c0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 30px;
+}
+
+.fa-copyright {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.flex-display {
+    display: flex;
+    align-items: center;
 }
 
 .fa-linkedin-in:hover {
@@ -183,6 +234,10 @@ body {
     color: #FF0000;
 }
 
+.card-logo img {
+    width: 30%;
+}
+
 .card-logo {
     text-align: center;
     margin-bottom: 10px;
@@ -202,7 +257,7 @@ body {
 
 .card:hover {
     background-color: skyblue;
-    /* color: white; */
+    transform: scale(1.2);
 }
 
 .card-text {
@@ -283,15 +338,9 @@ blockquote {
     vertical-align: middle;
     font-size: 120%;
     width: 100%;
-    /* margin: 50px auto; */
     font-family: 'Nunito', sans-serif;
-    /* font-style: italic; */
-    /* color: #555555; */
     padding: 1.2em 30px 1.2em 75px;
-    /* border-left: 8px solid #78C0A8;
-    line-height: 1.6; */
     position: relative;
-    /* background: #EDEDED; */
 }
 
 blockquote::before {
@@ -302,6 +351,16 @@ blockquote::before {
     position: absolute;
     left: 10px;
     top: -30px;
+}
+
+@media screen and (max-width: 991px) {
+    blockquote {
+        padding: 1.2em 0px 1.2em 0px;
+    }
+    blockquote::before {
+        left: -50px;
+        top: -40px;
+    }
 }
 
 blockquote::after {
@@ -319,15 +378,29 @@ cite {
 .carousel.carousel-fade .carousel-item {
     display: block;
     opacity: 0;
-    transition: opacity ease-in 1s;
+    overflow-y: visible;
 }
 
 .carousel.carousel-fade .carousel-item.active {
     opacity: 1 !important;
 }
 
-.carousel-item {
-    overflow-y: visible;
+.carousel.carousel-fade .carousel-item:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}
+
+.carousel.carousel-fade .carousel-item:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.2s, opacity ease-in 1s;
+}
+
+#founderInnerContent {
+    transition: all 0.2s;
+}
+
+#founderInnerContent:hover {
+    transform: scale(1.2);
 }
 
 .dropdown-toggle {
@@ -414,6 +487,14 @@ cite {
     width: 100%;
 }
 
+.testimonials-phrase {
+    font-size: 140%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 .founder-content {
     font-size: 100%;
     padding-left: 50px;
@@ -421,26 +502,26 @@ cite {
 }
 
 .founder {
+    padding-top: 30px;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .founder-name {
     margin-top: 10px;
+    font-size: 150%;
 }
 
 .course-banner {
     background-color: white;
-    /* background-image: url('../img/placement-prep/banner.png'); */
     background-position: center;
-    /* overflow-y: hidden; */
     background-repeat: no-repeat;
+    background-size: auto 100%;
     background-position: center right;
-    /* background-size: 100%; */
-    /* width: 100%; */
     height: 400px;
-    /* margin-top: 100px;
-    margin-bottom: 50px; */
-    /* border-radius: 5px; */
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .course-banner-content {
@@ -493,8 +574,8 @@ cite {
 }
 
 .founder-company {
-    width: 30%;
-    padding: 10px;
+    width: 15%;
+    margin: 10px;
 }
 
 #pricing .card:hover {
@@ -502,5 +583,18 @@ cite {
 }
 
 .card-text-lg {
+    font-size: 120%;
+}
+
+#testimonialsCarousel .carousel-inner {
+    background-image: linear-gradient(yellow, white);
+    opacity: 0;
+}
+
+#founderInnerContent {
+    opacity: 0;
+}
+
+.nav-link {
     font-size: 120%;
 }
