@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top justify-content-end">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top justify-content-end">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="./index.html">
                 <img id="navbarLogo" src="img/logo.png" width="70">
@@ -37,17 +37,17 @@
             <div class="collapse navbar-collapse flex-grow-0" id="navbar">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a class="nav-link js-scroll-trigger" href="#overview">Overview</a>
+                        <a class="nav-link active js-scroll-trigger" href="#overview">Overview</a>
                     </li>
                     <li>
-                        <a class="nav-link js-scroll-trigger" href="#courseContent">Course Content</a>
+                        <a class="nav-link active js-scroll-trigger" href="#courseContent">Course Content</a>
                     </li>
                     <li>
-                        <a class="nav-link js-scroll-trigger" href="#pricing">Pricing</a>
+                        <a class="nav-link active js-scroll-trigger" href="#pricing">Pricing</a>
                     </li>
                     <li>
                         <div class="dropdown">
-                            <button class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="nav-link active dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Careers
                             </button>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
@@ -77,10 +77,15 @@
             </div>
             <div class="row row-content">
                 <div class="course-content">
-                    This course is for all those who are looking forward to sit for internships and placements. We will begin from programming fundamentals using C++, Loops, Functions, Arrays, Stacks, Queues, Linked List.
-                    <br><br> And then We Will Jump to involve rigorous practice of questions based on Sorting, Searching, Greedy Algorithms, Divide and Conquer Algorithms, Dynamic Programming along with comprehensive revision of data structures like linked-lists,
-                    Trees, Graphs, Heaps, Hashing etc.
-                    <br><br> From Interview recommendations to placement, we are there for you at every step.Get into Bigwigs: Our expert will help you crack interviews for Amazon, Microsoft, Apple, Google, and Facebook.
+                    System Design questions have become a standard part of the software engineering interview process. Performance in these interviews reflects upon your ability to work with complex systems and translates into the position and salary the interviewing company
+                    offers you. Most engineers struggle with the system design interview (SDI), partly because of their lack of experience in developing large-scale systems and partly because of the unstructured nature of SDIs. Even engineers who’ve some
+                    experience building such systems aren't comfortable with these interviews, mainly due to the open-ended nature of design problems that don't have a standard answer.
+
+                    <br> <br> This course is a complete guide to master the SDIs. It is created by hiring managers who’ve been working at Google, Facebook, Microsoft, and Amazon. We've carefully chosen a set of questions that have not only been repeatedly
+                    asked at top companies, but also provide a thorough experience to handle any system design problem.
+
+                    <br> <br> Let’s get started!
+
                 </div>
             </div>
         </div>
@@ -94,16 +99,22 @@
             <div class="row row-content">
                 <div class="col-md-4 course-content-cell shade">
                     <div class="course-content-cell-title">
-                        Intro to System Design
+                        Glossary of System Design Basics
                     </div>
                     <div class="course-content-cell-content">
                         <ul>
-                            <li>Pseudo Code</li>
-                            <li>IDE Installation</li>
-                            <li>Variable, Loops, Conditional Statements</li>
-                            <li>Functions, Reference Variables</li>
-                            <li>Arrays, Pointers</li>
-                            <li>Strings, 2D Arrays</li>
+                            <li>System Design Basics</li>
+                            <li>Key Characteristics of Distributed Systems</li>
+                            <li>Load Balancing</li>
+                            <li>Caching</li>
+                            <li>Data Partitioning</li>
+                            <li>Indexes</li>
+                            <li>Proxies</li>
+                            <li>Redundancy and Replication</li>
+                            <li>SQL vs. NoSQL</li>
+                            <li>CAP Theorem</li>
+                            <li>Consistent Hashing</li>
+                            <li>Long-Polling vs WebSockets vs Server-Sent Events</li>
                         </ul>
                     </div>
                 </div>
@@ -113,10 +124,16 @@
                     </div>
                     <div class="course-content-cell-content">
                         <ul>
-                            <li>Recursion & Backtracking</li>
-                            <li>Space Time Complexity Basics</li>
-                            <li>Stacks & Queues - Basics</li>
-                            <li>Problem Solving</li>
+                            <li>Computer Networks</li>
+                            <li>Distributed Systems</li>
+                            <li>Parallel Computing</li>
+                            <li>Estimation</li>
+                            <li>Database Design</li>
+                            <li>API Design</li>
+                            <li>Storage System</li>
+                            <li>Caching </li>
+                            <li>Load Balancing</li>
+                            <li>Efficiency Improvements etc.</li>
                         </ul>
                     </div>
                 </div>
@@ -144,20 +161,28 @@
                     </div>
                     <div class="course-content-cell-content">
                         <ul>
-                            <li>Stacks & Queues - Advanced</li>
-                            <li>Trees & Tries</li>
-                            <li>Graphs</li>
-                            <li>Heaps, Priority Queues</li>
-                            <li>Binary Search Trees</li>
-                            <li>Dynamic Programming</li>
-                            <li>Greedy Algorithms</li>
-                            <li>DP Vs Greedy</li>
+                            <li>Load balancing</li>
+                            <li>Smart clients</li>
+                            <li>Hardware load balancers</li>
+                            <li>Software load balancers</li>
+                            <li>Caching</li>
+                            <li>Application vs. Database caching</li>
+                            <li>In-memory caches (e.g. Memcached, Redis)</li>
+                            <li>Content distribution networks</li>
+                            <li>Cache invalidation</li>
+                            <li>Off-line processing</li>
+                            <li>Message queues</li>
+                            <li>Tool: RabbitMQ</li>
+                            <li>Scheduling periodic tasks</li>
+                            <li>MapReduce</li>
+                            <li>Tool: Hadoop MapReduce, Hive, HBase</li>
+                            <li>Platform Layer</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-4 course-content-cell shade">
                     <div class="course-content-cell-title">
-                        Interview Specific
+                        Frequently Asked Questions
                     </div>
                     <div class="course-content-cell-content">
                         <ul>
@@ -174,11 +199,14 @@
                 </div>
                 <div class="col-md-4 course-content-cell">
                     <div class="course-content-cell-title">
-                        Interview Problems
+                        Interview Guidance / Mock Interview Session
                     </div>
                     <div class="course-content-cell-content">
                         <ul>
-                            <li>Company-wise LeetCode Questions</li>
+                            <li>How To Crack Coding interview - Tier 1 Companies like: Amazon,Microsoft, Flipkart And Google - Session by Expert from Top Companies</li>
+                            <li>Mock Interviews (One on one ) With Expert</li>
+                            <li>How to Approach System Design And Design</li>
+                            <li>Pattern Questions?</li>
                         </ul>
                     </div>
                 </div>

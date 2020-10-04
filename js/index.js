@@ -98,3 +98,13 @@ function toggleDropdownOnNavClick() {
 
 $('.nav-link').on('click', toggleDropdownOnNavClick);
 $('.navbar-brand').on('click', toggleDropdownOnNavClick);
+
+$(window).scroll(function() {
+    if ($(document).scrollTop() > 70) {
+        $('#navbarLogo').width("40");
+        $('.nav-link').css('font-size', '100%');
+    } else {
+        $('#navbarLogo').width("80");
+        $('.nav-link').css('font-size', '120%');
+    }
+});
